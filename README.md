@@ -6,6 +6,10 @@ This repository contains the implementation of UGLF model. It is a deep learning
 
 Project page: https://tranhoangkim.github.io/UGLF-web/
 
+## Updates
+
+* 15/03/2024: UGLF has been accepted to IJCNN 2024.
+
 ## Gallery
 
 <p align="center">
