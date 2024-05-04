@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Unifying Global and Local Scene Entities Modelling for Precise Action Spotting
+    </title>
+    <meta content="UGLF" property="og:title" />
+    <meta content="A typical pipeline for multi-object tracking (MOT) is to use a detector for object localization, and following re-identification (re-ID) for object association. This pipeline is partially motivated by recent progress in both object detec- tion and re-ID, and partially motivated by biases in existing tracking datasets, where most objects tend to have distin- guishing appearance and re-ID models are sufficient for es- tablishing associations. In response to such bias, we would like to re-emphasize that methods for multi-object tracking should also work when object appearance is not sufficiently discriminative. To this end, we propose a large-scale dataset for multi-human tracking, where humans have similar appearance, diverse motion and extreme articulation. As the dataset contains mostly group dancing videos, we name it “DanceTrack”. We expect DanceTrack to provide a better platform to develop more MOT algorithms that rely less on visual discrimination and depend more on motion analysis. We benchmark several state-of-the-art trackers on our dataset and observe a significant performance drop on DanceTrack when compared against existing benchmarks." name="description" property="og:description" />
+    <meta content="https://github.com/DanceTrack" property="og:url" />
+    <meta name="keywords" content="Generic Multi-Object Tracking in Uniform Appearance and Diverse Motion">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <script defer src="js/fontawesome.all.min.js"></script>
+</head>
+
+<body>
+
+    <div class="n-title">
+        <h1>
+            Unifying Global and Local Scene Entities Modelling for Precise Action Spotting
+        </h1>
+    </div>
+    <div class="n-byline">
+        <div class="byline">
+
+            <ul class="authors">
+                <li>
+                    Kim Hoang Tran<sup>*1,3</sup>
+                </li>
+                <li>
+                    Phuc Do Vuong<sup>*2,3</sup>
+                </li>
+                <li>
+                    Ngoc Quoc Ly<sup>3</sup>
+                </li>
+                <li>
+                    Ngan Le<sup>4</sup>
+                </li>                                                 
+            </ul>
+            <ul class="authors affiliations">
+                <li>
+                    <sup>
+                        1
+                    </sup>
+                    FPT Software AI Center, Vietnam
+                </li>
+                <li>
+                    <sup>
+                        2
+                    </sup>
+                    NAVER, Vietnam
+                </li>
+                <li>
+                    <sup>
+                        3
+                    </sup>
+                    VNUHCM-University of Science, Vietnam
+                </li>
+                <li>
+                    <sup>
+                        4
+                    </sup>
+                    Department of Computer Science, University of Arkansas, USA
+                </li>                
+            </ul>
+            <ul class="authors">
+                <li>
+                    * Equal contribution
+                </li>
+            </ul>                        
+            <ul class="authors">
+                <li>
+                    This work has been accepted to IJCNN 2024
+                </li>
+            </ul>
+
+            <ul class="authors links">
+                <li>
+                    <a href="https://arxiv.org/abs/2404.09951" target="_blank">
+                        <button class="btn"><svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fa fa-file-pdf"></i> Font Awesome fontawesome.com --> Paper</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Fsoft-AIC/unifying-global-local-feature" target="_blank">
+                        <button class="btn"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com --> Code</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!-- <iframe width="760" height="381" src="https://www.youtube.com/embed/IvxeJRg4rYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    
+    <div class="n-article">
+        <div class="n-page video">
+            <p style="text-align: center; font-size: 22px; font-family: 'Courier New', monospace; font-weight: bold;">
+                Software Demo for spotting action in sports video
+            </p>
+            <div class="videoWrapper shadow">
+                <iframe width="560" height="315" border-style=none src="https://www.youtube.com/embed/9dbf3g5Tum8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2 id="introduction">
+            What is the action-spotting problem?
+        </h2>
+        <p>
+            The concept of action spotting was first presented in the SoccerNet dataset. It involves identifying a specific momentary event, known as an action, using a single timestamp (only starting point). This differs from temporal action localization, which is characterized by defining the starting and ending points of actions. The performance of action-spotting is evaluated by loose average mAP metric. In this evaluation, a detection is considered correct if it falls within a certain time window around the true event, with a loose error tolerance ranging from 5 to 60 seconds. To evaluate more accurately, the tight average mAP metric is used with tighter error tolerance of 1 to 5 seconds.
+        </p>        
+
+        <h2 id="introduction">
+            Our Motivation
+        </h2>
+        <p>
+            <b>Motivation of fusing local feature to global feature:</b> Current sports video action-spotting methods predominantly rely on global features, employing a backbone network across the entire spatial frame. This approach struggles with action classes involving small objects like balls, and yellow/red cards, which occupy only a fraction of space. To address this, we introduce a novel approach, which employs an object detector for local features and integrates them with global features.
+        </p>
+
+        <p>
+            <b>Motivation of using vision-language object detector:</b> To eliminate the need for training the object detector on different datasets as in YOLO, Faster-RCNN as well as to detect a wide range of objects, and do not have to relabel data when new datasets become available, we propose to leverage VL model GLIP. 
+        </p>
+        
+        <div>
+            <img class="figure" src="media/Teaser.png" width="50%" alt="Pipeline Overview" style="display: block; margin: 0 auto;">
+        </div>
+        
+        <!------------------------------------------------------Section Boundary-------------------------------------------------->
+        <h2 id="method">
+            Methodology
+        </h2>
+
+        <p>
+            <b><u><span style="font-size: 20px;">Unifying Global and Local (UGL) Module</span></u></b> UGL module concurrently extracts both the 
+            global environment feature <span class="superscript">f<sup>Env</sup></span> and the local relevant entities feature <span class="superscript">f<sup>Ent</sup></span>. 
+            Subsequently, it combines these features to produce a unified global-local entities-environment feature <span class="superscript">f<sup>Ent−Env</sup></span>, 
+            acting as the unifying link between the local and global representations.
+        </p>
+        <div class="image-container">
+            <div>
+                <img class="figure" src="media/UGL.png" width="100%" alt="Pipeline Overview">
+                <p style="text-align: center; font-weight: bold;"></p>
+            </div>
+        </div>
+
+        <p>
+            <b><u><span style="font-size: 20px;">Long-term Temporal Reasoning (LTR) Module</span></u></b> LTR is responsible for estimating an action score for each frame in the δ-frame snippet. It consists of two components:  semantic modeling, and proposal estimation.
+                The first component focuses on modeling the semantic relationships between frames within a snippet. This is achieved by applying a 1-layer bidirectional Gated Recurrent Unit (GRU).
+        </p>
+        <div class="image-container">
+            <div>
+                <img class="figure" src="media/LTR.png" width="100%" alt="Pipeline Overview">
+                <p style="text-align: center; font-weight: bold;"></p>
+            </div>
+        </div> 
+
+        <h2 id="results">
+            Results
+        </h2>
+
+        <h3 id="results">
+            SOTA Comparsion
+        </h3>
+        
+        <div>
+            <img class="figure" src="media/Table1.png" alt="Pipeline Overview" style="display: block; margin: 0 auto;">
+            <p style="text-align: center; font-weight: bold;"></p>
+            <img class="figure" src="media/Table2.png" alt="Pipeline Overview" style="display: block; margin: 0 auto;">
+            <p style="text-align: center; font-weight: bold;"></p>
+        </div>
+
+        <h3 id="results">
+            Ablation Studies
+        </h3>
+
+        <div>
+            <img class="figure" src="media/Table3.png" alt="Pipeline Overview" style="display: block; margin: 0 auto;">
+            <p style="text-align: center; font-weight: bold;"></p>
+            <img class="figure" src="media/Table4.png" alt="Pipeline Overview" style="display: block; margin: 0 auto;">
+            <p style="text-align: center; font-weight: bold;"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p style="text-align: center;">&copy; Website for IJCNN2024's submission</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+    
+                   
