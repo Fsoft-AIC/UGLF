@@ -4,8 +4,7 @@
 
 This repository contains the implementation of UGLF model. It is a deep learning model which is used to solve the action spotting task on the SoccerNet-v2 dataset. By investigating in many current researches, we found that most of them just focus on the global feature (the whole frame) without considering the local feature (objects). From that insight, we propose a UGLF by unifying the global and local feature.
 
-Project page: https://tranhoangkim.github.io/UGLF-web/
-
+Project page: https://fsoft-aic.github.io/UGLF/
 ## Updates
 
 * 15/03/2024: UGLF has been accepted to IJCNN 2024.
